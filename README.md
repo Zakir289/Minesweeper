@@ -60,3 +60,76 @@ public class Unit {
 
 I had declared state and value as enum because those are only the values those variable will occupy
  
+
+- Next to Unit class we need Write the qualities of Grid. To make it simple I want make Grid as 2-Dimensional array of **Unit** classes. 
+
+I want to declare Grid as a interface and then extend it as a class with some additional functionalities.
+
+Here goes the interface
+
+```java
+public interface GridTemplate {
+    public void revealNeighbours();
+    public void showGrid();
+    public void revealMines();
+    public void placeMines();
+    public void createBoard();
+    public void placeNumbers();
+    public void playAnotherGame();
+    public boolean isGameOver();
+}
+
+```
+
+You can include many other functionalities like 2D grid or 3D grid, no of users playing the game(if you want), Reading the input, ....
+
+The basic class implementation for the above code goes here
+
+```java
+
+public class Grid implements GridTemplate {
+
+    Unit unit[][] = new Unit[8][8];// can be replaced by user choice about the grid layout
+    
+    @Override
+    public void revealNeighbours() {
+        /*when user chooses particular unit and if it is not mine, then other units will be shown */
+    }
+
+    @Override
+    public void showGrid() {
+        /* This function shows the grid evertime to the user so that he can choose wisely*/
+
+    }
+
+    @Override
+    public void revealMines() {
+/* Once the user looses the game, All the hidden mines are revelaed*/
+    }
+
+    @Override
+    public void placeMines() {
+/* if necessery get the information from the user about no of mines, By using Random function place the mines randomly on the grid*/
+    }
+
+    @Override
+    public void createBoard() {
+/* creates the grid with initializieng the two dimensionaly array and few other stuff*/
+    }
+
+    @Override
+    public void placeNumbers() {
+/* Based on the no of mines placed by the randon function we need fill the other boxes accordingly with numbers */
+    }
+
+    @Override
+    public void playAnotherGame() {
+
+    }
+
+    @Override
+    public boolean isGameOver() {
+        /* */
+    }
+}
+```

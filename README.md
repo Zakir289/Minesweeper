@@ -133,3 +133,6 @@ public class Grid implements GridTemplate {
     }
 }
 ```
+
+
+This is so simple implementation of **MineSweeper** program in OOPS, you can divide the Grid class into more classes.At the same time you can  declare Unit as Interface with some standard qualities and then create Unit class with some additional functionalities and so on

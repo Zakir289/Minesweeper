@@ -81,7 +81,7 @@ public interface GridTemplate {
 
 ```
 
-You can include many other functionalities like 2D grid or 3D grid, no of users playing the game(if you want), Reading the input, ....
+You can include many other functionalities like 2D grid or 3D grid, no of users playing the game(if you want), Reading the input, noOfMines, ....
 
 The basic class implementation for the above code goes here
 

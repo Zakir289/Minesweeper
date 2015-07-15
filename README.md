@@ -12,7 +12,7 @@ The above code has grid class which contain all the functionalities related to g
 
 ![output] (https://github.com/Zakir289/Minesweeper/blob/master/DocumentedImgaes/Minesweeper.png)
 
-##### Minesweeper in object oriented way
+#### Lets do Minsweeper in OOPS way
 
 - In the above code I had used two arrays and try maintain the info in two arrays. Instead of writing two arrays, I thought of declaring every single cell as **Unit** object.
 - **Unit**
